@@ -1,0 +1,98 @@
+body{
+  background-color: #bcd5f8;
+
+}
+
+.App {
+  margin-top:-1.5rem;
+  background-color: white;
+  height: 100vh;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.Nav{
+  padding:2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Nav>div{
+  width:30%;
+}
+.Name{
+  color:black;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.2rem;
+
+}
+.Nav>.Btn{
+  padding:0.5rem 1rem;
+  background-color: #0b489c;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.Nav-links>.Link{
+  text-decoration: none;
+  color: #797f87;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.Nav-links>.Link:hover{
+  color: #0b489c;
+}
+.Home{
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Nav-links{
+  display: flex;
+  justify-content: space-between;
+
+}
+.poem{
+  width:60%;
+  font-weight: bold;
+  height: fit-content;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom:2rem;
+}
+.Poems{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.prev{
+  color: white;
+  padding:1rem;
+  background-color: #0b489c;
+}
+.likes{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.lk{
+  display: flex;
+  justify-content: space-between;
+}
+.Create{
+  width:40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* @media (max-width: 1290px) {
+  .App {
+    width: 1280px;
+  }
+} */
