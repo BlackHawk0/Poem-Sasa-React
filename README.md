@@ -2,7 +2,7 @@
 Poemgram is a platform to read poems and create your own poems. It is built with React (frontend) and uses a json-server (backend) to store the poems.
 
 ## Authors
-- [Jackson Kahono]('https://github.com/Jackson-Kahono')
+- Dennis Kemboi
 
 ## Installation
 - Clone the repo
