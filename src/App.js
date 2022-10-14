@@ -17,6 +17,20 @@ function App() {
 
   const [user, setUser] = useState(localStorage.getItem('fuser') || null);
 
+  // get poems
+  fetch("http://localhost:3000/poems")
+    .then((res) => res.json())
+    .then((data) => {
+      setPoems(data);
+
+    }, []);
+
+
+
+
+
+
+
   const fetchLikes = async () => {
     // const res = await fetch('https://shrouded-everglades-59715.herokuapp.com/users/' + user);
     const res = await fetch('http://localhost:3000/users/' + user);
@@ -67,16 +81,7 @@ function App() {
         });
       setUser(usr);
     }
-    // fetch("https://shrouded-everglades-59715.herokuapp.com/poems")
-    fetch("http://localhost:3000/poems")
-      .then((res) => res.json())
-      .then((data) => {
-        setPoems(data);
-
-      });
-    // fetchLiked()
-    // fetchCollection()
-    console.log(poems);
+    
 
 
   }, []);
